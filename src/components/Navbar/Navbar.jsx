@@ -2,9 +2,11 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div>
-      Navbar
-    </div>
+    <header id='site_'>
+      <div>
+
+      </div>
+    </header>
   )
 }
 
