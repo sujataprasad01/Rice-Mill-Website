@@ -1,10 +1,58 @@
-import React from 'react'
-
+import React, {useState, useEffect} from 'react';
+import {Link} from 'react-scroll';
+import logo from './../../assets/logo/noun-rice-94344 (1).png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import './Navbar.css';
 function Navbar() {
-  return (
-    <header id='site_'>
-      <div>
 
+  const [sidenav, setSidenav]=useState(false);
+
+  const sidenavShow=()=>{
+    setSidenav(!sidenav);
+  }
+
+  // menu icon
+  const menuIcon = <FontAwesomeIcon icon={faBars} />
+
+  const [sticky, setSticky]=useState(false);
+  return (
+    <header id='site_header'>
+      <div className='container'>
+        <nav className='navbar' id='Navbar'>
+          <div className='navbar_brand'>
+            <Link to='/' spy={true} smooth={true}>
+              <img className='logo' src={logo} alt='Logo'></img>
+            </Link>
+          </div>
+          <div className='navbar_toggler' onClick={sidenavShow}>
+            {menuIcon}
+          </div>
+          <div className={`menu_items ${sidenav===true? 'active':''}`}>
+            <ul>
+              <li>
+            <Link activeClass='active' to='home' spy={true} smooth={true}>
+              <h4>Home</h4>
+                  </Link>
+              </li>
+              <li>
+            <Link to='about' spy={true} smooth={true}>
+              <h4>About Us</h4>
+                  </Link>
+              </li>
+              <li>
+            <Link to='services' spy={true} smooth={true}>
+              <h4>Services</h4>
+                  </Link>
+              </li>
+              <li>
+            <Link to='contact' spy={true} smooth={true}>
+              <h4>Contact</h4>
+                  </Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
   )
