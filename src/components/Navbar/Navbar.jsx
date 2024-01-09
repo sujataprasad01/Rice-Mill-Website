@@ -12,12 +12,21 @@ function Navbar() {
     setSidenav(!sidenav);
   }
 
+  useEffect(()=>{
+    const handleScroll=()=>{
+      setSticky(window.scrollY>20)
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return()=>window.removeEventListener('scroll', handleScroll);
+  })
   // menu icon
   const menuIcon = <FontAwesomeIcon icon={faBars} />
 
   const [sticky, setSticky]=useState(false);
   return (
-    <header id='site_header'>
+    <>
+    <header id='site_header' className={`${sticky? "sticky":""}`}>
       <div className='container'>
         <nav className='navbar' id='Navbar'>
           <div className='navbar_brand'>
@@ -55,6 +64,10 @@ function Navbar() {
         </nav>
       </div>
     </header>
+
+    <div style={{height:"1000px"}}>
+    </div>
+</>
   )
 }
 

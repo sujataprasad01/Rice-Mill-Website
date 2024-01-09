@@ -6,7 +6,7 @@
   /* Background Color */
   --primary-color:#f7eeee;
   --secondary-color:#f2f2f2;
-  /* --primary-nav-color: */
+  --primary-nav-color:#8c6026;
   --primary-bg:rgb(246, 238, 238)
   --font-color:#b7b7b7;
   /* --bg-color: #f8f8ff; */
@@ -121,7 +121,7 @@ h4{
   font-size: 1.5rem;
   line-height: 2.25rem;
   font-weight: 600;
-  color: black;
+  /* color: black; */
 }
 h5{
   font-size: 1.5rem;

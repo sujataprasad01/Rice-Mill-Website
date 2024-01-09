@@ -113,9 +113,21 @@
                         display: block;
                         padding: 0;
                     }
+
+                    &.active,
+                    &:hover,
+                    &:focus{
+                        color:var(--primary-nav-color);
+                    }
                 }
             }
         }
+
+        /* .menu_items ul li a.active,
+        .menu_items ul li a:hover,
+        .menu_items ul li a:focus{
+            color: #b47b31;
+        } */
     }
 }
 
