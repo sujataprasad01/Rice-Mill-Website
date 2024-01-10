@@ -57,11 +57,17 @@ function Home() {
                 <img src={surviceone}></img>
                 <h4>Manufacturing</h4>
                 <p>Nurturing <span className='rice' >quality rice</span>, one grain at a time, at our <span className='rice' >advanced</span> rice mill manufacturing unit.</p>
+                <div className='btn_wrapperr'>
+                  <Link className='btnn' to="/survice">Read More</Link>
+                </div>
               </div>
               <div className='sub_banner_image2'>
                 <img src={survicetwo}></img>
-                <h4>Exporter</h4>
+                <h4>Exporting</h4>
                 <p>Bringing the <span className='rice' >best</span> rice to your plate from our mill, no <span className='rice' >matter</span> where you are</p>
+                <div className='btn_wrapperr'>
+                  <Link className='btnn' to="/export">Read More</Link>
+                </div>
               </div>
             </div>
           </div>
