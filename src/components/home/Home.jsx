@@ -6,6 +6,7 @@ import surviceone from '../../assets/survices/1f0640e5-4c8b-4116-8794-f1d1c0e675
 import survicetwo from '../../assets/survices/75cc3e07-d1b7-46b5-9be9-c8b984a2631f.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChartLine, faShieldHalved, faChartArea } from '@fortawesome/free-solid-svg-icons';
+import Footer from '../footer/Footer';
 // import Footer from '../footer/Footer';
 function Home() {
 
@@ -29,7 +30,7 @@ function Home() {
                   Providing Quality Grains to Your Doorstep, <br />Your <span className='rice' >Trusted</span> Rice <span className='rice' >Provider</span>, Anytime, Anywhere!
                 </p>
                 <div className='btn_wrapper'>
-                  <Link className='btn' to="/">Discover More</Link>
+                  <Link className='btn' to="/about">Discover More</Link>
                 </div>
               </div>
               <div className='col'>
@@ -71,9 +72,11 @@ function Home() {
               </div>
             </div>
           </div>
-        </div>
 
+        </div>
       </section>
+      {/* <Footer></Footer> */}
+
     </>
   )
 }

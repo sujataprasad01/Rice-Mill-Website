@@ -1,37 +1,218 @@
 #about{
-.head{
-    overflow: hidden;
+      height: 100vh;
+      @media(max-width:992px){
+        height: 20vh;
+        
+      }
+    .head{
+    /* overflow: hidden;
     position: relative;
-    z-index:1;
-
+    z-index:1; */
     background: url('../../assets/about/Untitled_1.1.2-3.jpg') no-repeat center center;
-    transform:scale(1.1);
-/* width: 100%;
-height: 50%; */
+    /* /* transform:scale(1.1); */
+width: 100%;
+height: 100%; 
+@media(max-width:992px){
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:50rem;
+    
+
+}
 .col {
     /* position: absolute; */
-    top: 0;
+    /* top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(3px); /* Adjust the blur intensity as needed */
-    z-index: 1;
+    width: 100%;*/
+    height: 90%; 
+    backdrop-filter: blur(2px); 
+    /* z-index: 1;  */
 }
+.containerr{
+        width:auto;
+        display: flex;
+        margin-left: 6%;
+        margin-right: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+
+    @media(max-width:992px){
+        flex-direction: column;
+        /* margin-left: 0;
+    padding: 0; */
+    margin-right: 2rem;
+    }
 .col2{
-    overflow: hidden;
+    /* overflow: hidden;
     position: relative;
     z-index:1;
-    transform:scale(1.1);
+    transform:scale(1.1); */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+@media(max-width:992px){
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+    & h3{
+        margin: 2rem;
+        text-align: justify;
+        line-height: 3rem;
+    }
+    & h4{
+        text-align: justify;
+        margin: 2rem;
+    }
+}
+.col3{
+width: 50%;
+height: 60vh;
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+/* align-items: center; */
+margin: 2rem;
+
+@media(max-width:992px){
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: 0;
+    height: 100%;
+    padding: 0;
+
+
+}
+  
+    .imgone{
+    
+        /* width: 32%;
+        height: 32%; */
+        background-color: black;
+        width: 53%;
+        height: 100%;
+border-radius:0 10%;
+@media(max-width:992px){
+    margin-top: 130%;
+}
+        & img{
+            justify-content: center;
+            /* margin: 1rem; */
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            margin-left: 10%;
+    width: 100%;
+    height: 90%;
+    border-radius:0 10% 0 0;
+        }
+    }
+    .imgtwo{
+        /* width: 32%;
+        height: 32%; */
+        background-color: black;
+        width: 53%;
+        height: 70%;
+        margin-top: 2rem;
+        margin-left: 20rem;
+border-radius:10% 0;
+display: flex;
+/* justify-items: right; */
+/* justify-content: end; */
+@media(max-width:992px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 50%; */
+    /* margin: 4rem; */
+    margin-left: 9rem;
+    padding: 0;
+   
+   
+}
+        & img{
+            justify-content: center;
+            /* margin:1rem; */
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            margin-right:10%;
+    width: 90%;
+    height: 90%;
+    border-radius:10% 0 0 0;
+    /* justify-content: flex-r; */
+    @media(max-width:992px){
+        width: 90%;
+        height: 50%;
+        padding: 0;
+        /* margin: 0; */
+    }
+        }
+    }
+}
 }
 .title{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #ffffff;
     font-size: 5rem;
-    padding-top: 10rem;
+    padding-top: 25rem;
     width: 100%;
     /* height: 50vh; */
+    @media(max-width: 992px){
+        font-size: 3rem;
+        justify-content: center;
+        padding-top: 5rem;
+    }
 }
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(2px); 
+  }
+  
+  .contact, .categories {
+    width: 48%; /* Adjust the width as needed */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+   
+   
+  }
+  
+  .contact {
+    height: 400px; 
+    
+    background: url('../../assets/about/114665889-different-types-of-rice-as-background-closeup.jpg') center/cover;
+    & aone{
+        backdrop-filter: blur(2px); 
+            height: 100%;
+            width: 100%;
+        }
+  }
+  .categories{
+    height: 400px; 
+
+    background: url('../../assets/about/business-website-page-contact-businessman-touching-contact-us-icons-customer-service-include-telephone-address-email-message-by-3d-render_50039-2828.jpg');
+  }
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: white;
+  }
+  @media (max-width: 768px) {
+    .contact,
+    .categories {
+      width: 100%; 
+      margin: 2rem;/* Full width on smaller screens */
+    }
 }
 }
