@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
 import About from './components/about/About';
+import Contact from './components/contact/Contact';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
    <Navbar></Navbar>
    <Home></Home>
    <About></About>
+   <Contact></Contact>
    <Footer></Footer>   
     </div>
     </>
