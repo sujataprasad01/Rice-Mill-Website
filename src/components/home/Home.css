@@ -26,7 +26,7 @@
         height:auto;
         min-height: calc(100vh - 84px);
         transform:scale(1.1);
-        /* animation: wave 3s linear infinite; */
+        animation: wave 3s linear infinite;
 
         &:before{
             content:'';

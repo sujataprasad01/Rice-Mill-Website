@@ -7,6 +7,7 @@ import survicetwo from '../../assets/survices/75cc3e07-d1b7-46b5-9be9-c8b984a263
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChartLine, faShieldHalved, faChartArea } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../footer/Footer';
+import About from '../about/About';
 // import Footer from '../footer/Footer';
 function Home() {
 
@@ -71,10 +72,12 @@ function Home() {
                 </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </section>
+<About></About>
+
       {/* <Footer></Footer> */}
 
     </>

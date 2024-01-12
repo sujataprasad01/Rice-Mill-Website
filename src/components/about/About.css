@@ -1,5 +1,6 @@
 #about{
-      height: 100vh;
+      height: auto;
+      position:relative;
       @media(max-width:992px){
         height: 20vh;
         
@@ -8,7 +9,6 @@
     /* overflow: hidden;
     position: relative;
     z-index:1; */
-    background: url('../../assets/about/Untitled_1.1.2-3.jpg') no-repeat center center;
     /* /* transform:scale(1.1); */
 width: 100%;
 height: 100%; 
@@ -21,11 +21,13 @@ height: 100%;
 }
 .col {
     /* position: absolute; */
+    background: url('../../assets/about/Untitled_1.1.2-3.jpg') no-repeat center center;
+background-size: cover;
     /* top: 0;
     left: 0;
     width: 100%;*/
-    height: 90%; 
-    backdrop-filter: blur(2px); 
+    /* height: 90%;  */
+    /* backdrop-filter: blur(2px);  */
     /* z-index: 1;  */
 }
 .containerr{
@@ -51,6 +53,7 @@ height: 100%;
     flex-direction: column;
     width: 50%;
     height: 100vh;
+    margin-top: 3rem;
 @media(max-width:992px){
     display: flex;
     width: 100%;
@@ -75,6 +78,7 @@ flex-direction: column;
 /* justify-content: center; */
 /* align-items: center; */
 margin: 2rem;
+margin-top: 3rem;
 
 @media(max-width:992px){
     width: auto;
@@ -161,8 +165,9 @@ display: flex;
     align-items: center;
     color: #ffffff;
     font-size: 5rem;
-    padding-top: 25rem;
+    /* padding-top: 25rem; */
     width: 100%;
+    height: 50vh;
     /* height: 50vh; */
     @media(max-width: 992px){
         font-size: 3rem;
@@ -178,13 +183,23 @@ display: flex;
     backdrop-filter: blur(2px); 
   }
   
-  .contact, .categories {
+  .contact, .categories{
     width: 48%; /* Adjust the width as needed */
     padding: 20px;
     color: white;
     text-align: center;
     margin-top: 2rem;
+   margin-bottom: 7rem;
    
+        border-radius: 20px;
+    & h3{
+        /* color: white; */
+        font-size: 1.7rem;
+        padding-top: 4px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        margin-top: 4.5rem;
+    }
    
   }
   
@@ -206,7 +221,7 @@ display: flex;
   h3 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: white;
+    color: black;
   }
   @media (max-width: 768px) {
     .contact,

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Link} from 'react-scroll';
+import { Link } from 'react-router-dom'
 import logo from './../../assets/logo/noun-rice-94344 (1).png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -40,22 +40,24 @@ function Navbar() {
           <div className={`menu_items ${sidenav===true? 'active':''}`}>
             <ul>
               <li>
-            <Link activeClass='active' to='home' spy={true} smooth={true}>
+            <Link activeClass='active' to='/'>
               <h4>Home</h4>
                   </Link>
               </li>
+             
               <li>
-            <Link to='about' spy={true} smooth={true}>
+            <Link to='/export'>
+              <h4>Export</h4>
+                  </Link>
+              </li>
+              <li>
+            <Link to='/about'>
               <h4>About Us</h4>
                   </Link>
               </li>
+             
               <li>
-            <Link to='services' spy={true} smooth={true}>
-              <h4>Services</h4>
-                  </Link>
-              </li>
-              <li>
-            <Link to='contact' spy={true} smooth={true}>
+            <Link to='/contact'>
               <h4>Contact</h4>
                   </Link>
               </li>

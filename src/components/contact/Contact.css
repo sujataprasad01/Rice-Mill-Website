@@ -1,11 +1,11 @@
 /* Contact CSS */
 #contact{
     padding:3rem 0;
-
+    /* margin-top: 50rem; */
     .contact_wrapper{
         display:flex;
         justify-content:space-between;
-        margin-top:4rem;
+        /* margin-top:4rem; */
         flex-wrap: wrap;
 
         @media (max-width:992px){
@@ -34,8 +34,8 @@
             .form-control{
                 width:100%;
                 background-color:transparent;
-                border:.0714rem solid var(--white-color);
-                color:var(--white-color);
+                border:.0714rem solid black;
+                color:black;
                 font-size:1.0714rem;
                 font-weight: 400;
                 padding:.7143rem 1.4286rem;
@@ -47,8 +47,8 @@
                 width:100%;
                 display:block;
                 background-color:transparent;
-                border:.0714rem solid var(--white-color);
-                color:var(--white-color);
+                border:.0714rem solid black;
+                color:black;
                 font-size:1.0714rem;
                 font-weight: 400;
                 padding:.7143rem 1.4286rem;
@@ -61,7 +61,7 @@
             .form-control:focus,
             & textarea:focus{
                 border-color:var(--primary-color);
-                color:var(--white-color);
+                color:black;
             }
         }
         .btn_wrapper{
@@ -85,7 +85,15 @@
                     right:0;
                 }
             } 
+& h2{
+    padding:0 0 2rem 0;
+}
+.cone ,.ctwo ,.cthree, .cfour{
+    & h3, h4{
+        padding: 1rem 0;
+    }
 
+}
             & img{
                 border-radius: 2.1429rem;
                 position:relative;

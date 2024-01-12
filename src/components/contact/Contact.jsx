@@ -11,6 +11,23 @@ export default function Contact() {
                     <div className="contact_col">
                         <div className="contact_image">
                             {/* <img src={ContactImage} alt="Contact"/> */}
+                            <h2>Contact Info</h2>
+                            <div className='cone'>
+                            <h3>Call Us</h3>
+                            <h4> +91 9145110493 </h4>
+                            </div>
+                            <div className='ctwo'>
+                            <h3>Our Email</h3>
+                            <h4><a href='hariomricemill2007@gmail.com'>hariomricemill2007@gmail.com</a></h4>
+                            </div>
+                            <div className='cthree'>
+                            <h3>Working Hours</h3>
+                            <h4> Mon-Sat: 10AM-8PM </h4>
+                            </div>
+                            <div className='cfour'>
+                            <h3>Our Location</h3>
+                            <h4>Nagbhid district - Chandrapur, Maharashtra, India. </h4>
+                            </div>
                         </div>
                     </div>
                     <div className="contact_col">
