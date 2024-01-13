@@ -66,7 +66,7 @@ function Home() {
               <div className='sub_banner_image2'>
                 <img src={survicetwo}></img>
                 <h4>Exporting</h4>
-                <p>Bringing the <span className='rice' >best</span> rice to your plate from our mill, no <span className='rice' >matter</span> where you are</p>
+                <p>Bringing the <span className='rice' >best</span> rice to your plate from our mill, no <span className='rice' >matter</span> where you are. From our Exportation Service</p>
                 <div className='btn_wrapperr'>
                   <Link className='btnn' to="/export">Read More</Link>
                 </div>

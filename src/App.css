@@ -5,13 +5,13 @@
 :root{
   /* Background Color */
   --primary-color:#f7eeee;
-  --secondary-color:#2c1c06;
+  --secondary-color:#5f5343;
   --primary-nav-color:#c88937;
   --primary-bg:rgb(246, 238, 238);
   --bg-footer-color:#483113;
   --font-color:#b7b7b7;
   /* --bg-color: #f8f8ff; */
-  --bg-color:#f5f5f5;
+  --bg-color:#ecdbc57f;
   --bg-dark-color:#0c0b0black#fdfffc;
   --border-color-light:rgb(255,255,255,0.2);
   --box-shadow:0 1rem 3rem rgb(0 0 0 /12%);
