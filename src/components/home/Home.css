@@ -6,6 +6,7 @@
     overflow: hidden;
     min-height: calc(190vh - 84px);
     padding:8rem 0 0;
+    animation: wave 3s linear infinite;
     /* box-sizing: border-box; */
     @media (max-width:767px){
         padding:3rem 0 0;
@@ -26,7 +27,7 @@
         height:auto;
         min-height: calc(100vh - 84px);
         transform:scale(1.1);
-        animation: wave 3s linear infinite;
+        /* animation: wave 3s linear infinite; */
 
         &:before{
             content:'';
@@ -38,6 +39,35 @@
             z-index:2;
             background:var(--dark-layer-color);
         }
+        /* @media(max-width:992px){
+            height: 5%;
+        } */
+
+        .containerrrr{
+            width:auto;
+      max-width:1320px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      margin:3rem 12rem;
+      @media(max-width: 992px){
+        margin: 0;
+      }
+        }
+    }
+    .containerrr{
+        width:auto;
+  max-width:1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-top: 40rem;
+  @media(max-width: 992px){
+    margin-top: 55rem;
+
+  }
     }
     .banner_outer{
         display:flex;
@@ -72,7 +102,6 @@
             line-height: 5rem;
             font-weight: 200;
             margin-bottom:1rem;
-            
             /* text-transform: uppercase; */
 
             & span{
@@ -84,9 +113,7 @@
                 text-align: center;
                 line-height: 3rem;
 
-                /* & h4{
-                    font-size: 0.3rem;
-                } */
+                
                
             }
             @media (max-width:767px){
@@ -175,7 +202,7 @@
     /* margin: 0 2rem; */
             @media(max-width:992px){
                 display: flex;
-                flex-direction: column;
+                flex-direction: column-reverse;
                 left: 0;
                 right: 0;
                 margin: 0;
@@ -307,7 +334,7 @@
                   font-size: 1rem;
                   border-radius:2.143rem;
                   font-weight: 400;
-                  box-shadow: 0 0.5rem 1rem rgb(16 16 16);
+                  box-shadow: 0 0.5rem 0.2rem rgb(16 16 16);                 
                   outline:2px solid var(--secondary-color);
                   outline-offset:0px;
                   border:none;

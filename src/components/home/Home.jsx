@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.css';
 import { Link } from 'react-router-dom';
 import BannerImage from '../../assets/banner/ba01c2ad-b832-4a25-a16d-24f8225c8e6e.jpeg';
@@ -17,13 +17,15 @@ function Home() {
   const faShieldIcon = <FontAwesomeIcon icon={faShieldHalved} />
   const faChartAreaIcon = <FontAwesomeIcon icon={faChartArea} />
 
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
       <section id='home'>
         <div className='banner_image'>
-          <div className='container'>
+          <div className='containerrrr'>
             <div className='banner_outer'>
               <div className='col'>
                 <h3 className='title'>
@@ -35,7 +37,7 @@ function Home() {
                 <div className='btn_wrapper'>
                   {/* <Link className='btn' to="/about">Discover More</Link> */}
                   <Link className='btn' to='/about'>
-              Discover More
+                Discover More
                   </Link>
                 </div>
               </div>
@@ -55,6 +57,9 @@ function Home() {
                 </div>
               </div>
             </div>
+           </div>
+            </div>
+          <div className='containerrr'>
             <div className='title_two'>
               <h3>Our Services</h3>
             </div>
@@ -77,9 +82,10 @@ function Home() {
                 </div>
               </div>
             </div>
-
+            </div>
+{/* 
           </div>
-        </div>
+        </div> */}
       </section>
 
     </>

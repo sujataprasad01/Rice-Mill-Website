@@ -85,7 +85,7 @@ a{
     font-size: 1.143rem;
     border-radius:2.143rem;
     font-weight: 600;
-    box-shadow: 0 0.5rem 1rem rgb(16 16 16);
+    box-shadow: 0 0.5rem 0.2rem rgb(16 16 16);
     outline:2px solid var(--secondary-color);
     outline-offset:0px;
     border:none;
