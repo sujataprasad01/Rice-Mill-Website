@@ -19,12 +19,12 @@ function About() {
               {/* <img src={about}>
             </img> */}
               <h3><span className='rice' >Grains of Excellence</span>: Your Trusted Choice for Quality Rice Since <span className='rice' >2007!</span></h3>
-              <h4>Since 2007, we've been dedicated to producing top-notch rice. <br /> <br />
-                Our commitment to quality has created a strong reputation in the market.
-                We focus on delivering the best grains, building trust with our customers.  <br /> <br />
-                Our journey is all about exceeding expectations and setting
-                new standards for excellence in the rice industry.<br /><br />
-                Fueling Growth at Our Rice Mill: Picture this - every month, we're producing a massive 1000 tons of top-notch rice. It's not just about quantity; it's about quality too.<br /><br /> Our mill is a buzzing hub of productivity, dedicated to delivering the finest rice. Join us in this rice revolution, where every grain tells a story of excellence!
+              <h4>Since <span className='rice' >2007</span>, we've been dedicated to producing top-notch <span className='rice' >rice. </span><br /> <br />
+                Our commitment to <span className='rice' >quality</span> has created a strong <span className='rice' >reputation</span> in the market.
+                We focus on delivering the <span className='rice' >best grains</span>, building trust with our <span className='rice' >customers.</span>  <br /> <br />
+                <span className='rice' >Our</span> journey is all about exceeding <span className='rice' >expectations</span> and setting
+                new standards for <span className='rice' >excellence</span> in the rice industry.<br /><br />
+                Fueling <span className='rice' >Growth</span> at Our Rice Mill: Picture this - every month, we're producing a <span className='rice' >massive 1000 tons</span> of <span className='rice' >top-notch rice.</span> It's not just about <span className='rice' >quantity;</span> it's about quality too.<br /><br /> Our <span className='rice' >mill</span> is a buzzing hub of <span className='rice' >productivity</span>, dedicated to delivering the <span className='rice' >finest rice.</span> Join us in this rice revolution, where <span className='rice' >every grain</span> tells a story of <span className='rice' >excellence!</span>
               </h4>
             </div>
             <div className='col3'>
@@ -40,16 +40,16 @@ function About() {
           <div className='container'>
             <div className='contact'>
               <div className='aone'>
-                <h3>Your Rice Needs, Our Priority: Connect with Us</h3>
+                <h3>See more about variety of Rice from our mill</h3>
                 <div className='btn_wrapper'>
-                  <Link className='btn' to="/contact">Contact</Link>
+                  <Link className='btn' to="/export">Exportation</Link>
                 </div>
               </div>
             </div>
             <div className='categories'>
-              <h3>Your Rice Needs, Our Priority: Connect with Us</h3>
+              <h3>Your rice needs, our priority: Connect with us</h3>
               <div className='btn_wrapper'>
-                <Link className='btn' to="/contact">Exportation</Link>
+                <Link className='btn' to="/contact">Contact</Link>
               </div>
             </div>
           </div>
