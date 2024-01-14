@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import BannerImage from '../../assets/banner/ba01c2ad-b832-4a25-a16d-24f8225c8e6e.jpeg';
 import surviceone from '../../assets/survices/1f0640e5-4c8b-4116-8794-f1d1c0e675ce.jpeg';
 import survicetwo from '../../assets/survices/75cc3e07-d1b7-46b5-9be9-c8b984a2631f.jpeg';
@@ -8,6 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChartLine, faShieldHalved, faChartArea } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../footer/Footer';
 import About from '../about/About';
+// import{BrowserRouter as Router,Routes,Route} from "react-router-dom";
+
 // import Footer from '../footer/Footer';
 function Home() {
 
@@ -31,7 +33,10 @@ function Home() {
                   Providing Quality Grains to Your Doorstep, <br />Your <span className='rice' >Trusted</span> Rice <span className='rice' >Provider</span>, Anytime, Anywhere!
                 </p>
                 <div className='btn_wrapper'>
-                  <Link className='btn' to="/about">Discover More</Link>
+                  {/* <Link className='btn' to="/about">Discover More</Link> */}
+                  <Link className='btn' to='/about'>
+              Discover More
+                  </Link>
                 </div>
               </div>
               <div className='col'>
@@ -60,7 +65,7 @@ function Home() {
                 <h4>Manufacturing</h4>
                 <p>Nurturing <span className='rice' >quality rice</span>, one grain at a time, at our <span className='rice' >advanced</span> rice mill manufacturing unit.</p>
                 <div className='btn_wrapperr'>
-                  <Link className='btnn' to="/survice">Read More</Link>
+                  <Link className='btnn' to="/manufacture">Read More</Link>
                 </div>
               </div>
               <div className='sub_banner_image2'>
@@ -76,9 +81,6 @@ function Home() {
           </div>
         </div>
       </section>
-<About></About>
-
-      {/* <Footer></Footer> */}
 
     </>
   )

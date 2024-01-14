@@ -28,10 +28,10 @@ export default function Export() {
                 <p>From Our Fields to Your Fork: Savor the Finest Non-Basmati Rice Varieties, Carefully Crafted and Promptly Delivered.</p>
             </div>
 
-     <div className='hero'>
-            <div className='heroonee'><img src={Heroone}></img></div>
-            <div className='heroone'><img src={Herotwo}></img></div>
-            <div className='heroonee'><img src={Herothree}></img></div>
+     <div className='heo'>
+            <div className='heoonee'><img src={Heroone}></img></div>
+            <div className='heoone'><img src={Herotwo}></img></div>
+            <div className='heoonee'><img src={Herothree}></img></div>
 
         </div>
         <div className="container">

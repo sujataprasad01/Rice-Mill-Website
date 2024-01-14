@@ -44,6 +44,11 @@ function Navbar() {
               <h4>Home</h4>
                   </Link>
               </li>
+              <li>
+            <Link to='/about'>
+              <h4>About Us</h4>
+                  </Link>
+              </li>
              
               <li>
             <Link to='/export'>
@@ -51,11 +56,10 @@ function Navbar() {
                   </Link>
               </li>
               <li>
-            <Link to='/about'>
-              <h4>About Us</h4>
+              <Link to='/manufacture'>
+              <h4>Manufacture</h4>
                   </Link>
               </li>
-             
               <li>
             <Link to='/contact'>
               <h4>Contact</h4>

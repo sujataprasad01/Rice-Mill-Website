@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 import abouticonone from '../../assets/about/7c21bc9a-b2a9-4a1d-92c1-099c7e1aaaad.jpeg'
 import abouticontwo from '../../assets/about/15a811a0-7b60-4cb7-b4b2-77d5c42c832b.jpeg'

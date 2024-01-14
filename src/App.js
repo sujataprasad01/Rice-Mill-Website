@@ -7,6 +7,7 @@ import Contact from './components/contact/Contact';
 import Export from './components/Export/Export';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import{BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import Manufacture from './components/manufacturing/Manufacture';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='/about' element={<About />} />
+          <Route exact path='/manufacture' element={<Manufacture />} />
           <Route exact path='/export' element={<Export />} />
           <Route exact path='/contact' element={<Contact />} />
         </Routes>
