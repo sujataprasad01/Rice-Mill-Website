@@ -1,7 +1,17 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/logo/noun-rice-94344 (1).png'
 function Footer() {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+
   return (
     <div className='main_container'>
       <div className='sub_container'>
@@ -19,16 +29,16 @@ customers.</h3>
         <h4>Nagbhid district - Chandrapur, Maharashtra, India.</h4>
         <h3>Contact Us</h3>
         <h4>Call and WhatsApp : +91 9145110493</h4>
-        <h4>E-mail I'd : <a href='hariomricemill2007@gmail.com'>hariomricemill2007@gmail.com</a></h4>
+        <h4>E-mail I'd : <Link to='hariomricemill2007@gmail.com'>hariomricemill2007@gmail.com</Link></h4>
         </div>
         <div>
             <h3>Quick Links</h3>
-            <a href='/home'><h4>Home</h4></a>
-            <a href='/manufacture'><h4>Manufacture</h4></a>
-            <a href='/about'><h4>About Us</h4></a>
-            <a href='/export'><h4>Export</h4></a>
-            <a href='/contact'><h4>Contact</h4></a>
-            {/* <a href='/contact'><h4>Conatct Us</h4></a> */}
+            <Link to='/home' onClick={scrollToTop}><h4>Home</h4></Link>
+            <Link to='/manufacture' onClick={scrollToTop}><h4>Manufacture</h4></Link>
+            <Link to='/about' onClick={scrollToTop}><h4>About Us</h4></Link>
+            <Link to='/export' onClick={scrollToTop}><h4>Export</h4></Link>
+            <Link to='/contact' onClick={scrollToTop}><h4>Contact</h4></Link>
+            {/* <Link to='/contact'><h4>Conatct Us</h4></Link> */}
 
         </div>
       </div>
