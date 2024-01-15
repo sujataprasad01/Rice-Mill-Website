@@ -1,4 +1,4 @@
-import React , {useEffect} from 'react';
+import React , {useEffect, useState, useRef} from 'react';
 import './Contact.css';
 
 import { submitForm, saveMessages, getElementVal } from '../../firebase';
@@ -41,7 +41,14 @@ import { submitForm, saveMessages, getElementVal } from '../../firebase';
 
 
 export default function Contact() {
-    useEffect(() => {
+
+    // const [showAlert, setShowAlert] = useState(false);
+    const contactFormRef = useRef(null);
+    // useEffect(() => {
+
+        // const contactForm = document.getElementById("contactForm");
+        // contactFormRef.current = contactForm;
+        // if (contactForm) {
     const handleSubmit = (e) => {
         e.preventDefault(); // Call the submitForm function from firebase.js
         // submitForm();
@@ -55,28 +62,37 @@ export default function Contact() {
       saveMessages(name, phone, emailid, msgContent);
   
   //   enable alert
-  document.querySelector(".alert").style.display = "block";
+  const alertElement = document.querySelector(".alert");
+  if (alertElement && alertElement.style) {
+    alertElement.style.display = "block";
+  }
+
+  document.getElementById("contactForm").reset();
 
   //   remove the alert
   setTimeout(() => {
-    document.querySelector(".alert").style.display = "none";
-  }, 4000);
-
+    if (alertElement && alertElement.style) {
+        alertElement.style.display = "none";
+      }
+  }, 3000);
+    
       // Reset the form
-      document.getElementById("contactForm").reset();
 
     };
     //   componentDidMount() {
     //     document.getElementById("contactForm").addEventListener("submit", submitForm);
     // }
     
-        document.getElementById("contactForm").addEventListener("submit", handleSubmit);
+    //     document.getElementById("contactForm").addEventListener("submit", handleSubmit);
     
-        // Cleanup the event listener on component unmount
-        return () => {
-            document.getElementById("contactForm").removeEventListener("submit", handleSubmit);
-        };
-    }, []);
+    //     // Cleanup the event listener on component unmount
+    //     return () => {
+    //         if (contactFormRef.current) {
+    //         document.getElementById("contactForm").removeEventListener("submit", handleSubmit);
+    //         }
+    //     };
+    //     };
+    // }, []);
 
   return (
 
@@ -110,8 +126,8 @@ export default function Contact() {
                     </div>
                     <div className="contact_col">
                         <h2>Contact US</h2>
-                        <form id='contactForm' >
-                        <div class="alert">Your message sent</div>
+                        <form id='contactForm' ref={contactFormRef} onSubmit={handleSubmit}>
+                       <div className="alert">Your message sent</div>
                             <div className="input_wrapper">
                                 <input type="text" id='name' className="form-control" placeholder="Your Name..." autoComplete="off"/>
                             </div>
