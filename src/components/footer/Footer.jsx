@@ -11,6 +11,12 @@ function Footer() {
     });
   };
 
+  const handleCopy = () => {
+    const phoneNumber = "+91 9145110493";
+    navigator.clipboard.writeText(phoneNumber);
+    // props.showAlert("Your text is copied to clipboard", "success")
+
+}
 
   return (
     <div className='main_container'>
@@ -28,12 +34,12 @@ customers.</h3>
         <h3>Office</h3>
         <h4>Nagbhid district - Chandrapur, Maharashtra, India.</h4>
         <h3>Contact Us</h3>
-        <h4>Call and WhatsApp : +91 9145110493</h4>
-        <h4>E-mail I'd : <Link to='hariomricemill2007@gmail.com'>hariomricemill2007@gmail.com</Link></h4>
+       <h4> Call and WhatsApp :<button onClick={handleCopy} title="Click to Copy">+91 9145110493</button></h4>
+        <h4>E-mail I'd : <Link to='mailto:hariomricemill2007@gmail.com'>hariomricemill2007@gmail.com</Link></h4>
         </div>
         <div>
             <h3>Quick Links</h3>
-            <Link to='/home' onClick={scrollToTop}><h4>Home</h4></Link>
+            <Link to='/' onClick={scrollToTop}><h4>Home</h4></Link>
             <Link to='/manufacture' onClick={scrollToTop}><h4>Manufacture</h4></Link>
             <Link to='/about' onClick={scrollToTop}><h4>About Us</h4></Link>
             <Link to='/export' onClick={scrollToTop}><h4>Export</h4></Link>
