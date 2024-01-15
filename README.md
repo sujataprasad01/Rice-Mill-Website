@@ -1,5 +1,5 @@
 
-Link : hariomricemill.netlify.com
+Link : https://hariomricemill.netlify.com
 
 # Getting Started with Create React App
 
