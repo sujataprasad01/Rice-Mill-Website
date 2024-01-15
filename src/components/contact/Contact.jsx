@@ -128,6 +128,7 @@ export default function Contact() {
                         <h2>Contact US</h2>
                         <form id='contactForm' ref={contactFormRef} onSubmit={handleSubmit}>
                        <div className="alert">Your message sent</div>
+                       <div className='container'>
                             <div className="input_wrapper">
                                 <input type="text" id='name' className="form-control" placeholder="Your Name..." autoComplete="off"/>
                             </div>
@@ -144,6 +145,7 @@ export default function Contact() {
                                 <button type="submit" className="btn">
                                     Submit
                                 </button>
+                            </div>
                             </div>
                         </form>
                     </div>
