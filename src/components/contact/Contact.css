@@ -29,7 +29,7 @@ color: #6d4005;
 margin-bottom: 2.5rem;
 }
             @media (max-width:992px){
-                width:50%
+                width:100%
             }
             @media (max-width:767px){ 
                 width:100%;

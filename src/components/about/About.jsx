@@ -7,6 +7,14 @@ import abouticontwo from '../../assets/about/15a811a0-7b60-4cb7-b4b2-77d5c42c832
 import about from '../../assets/about/Untitled_1.1.2-3.jpg'
 import Footer from '../footer/Footer';
 function About() {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
       <section id='about'>
@@ -42,14 +50,14 @@ function About() {
               <div className='aone'>
                 <h3>See more about variety of Rice from our mill</h3>
                 <div className='btn_wrapper'>
-                  <Link className='btn' to="/export">Exportation</Link>
+                  <Link className='btn' to="/export" onClick={scrollToTop}>Exportation</Link>
                 </div>
               </div>
             </div>
             <div className='categories'>
               <h3>Your rice needs, our priority: Connect with us</h3>
               <div className='btn_wrapper'>
-                <Link className='btn' to="/contact">Contact</Link>
+                <Link className='btn' to="/contact" onClick={scrollToTop}>Contact</Link>
               </div>
             </div>
           </div>
