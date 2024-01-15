@@ -51,7 +51,9 @@ margin-bottom: 2.5rem;
         .input_wrapper{
             width:100%;
             display: flex;
-
+@media(max-width:992px){
+    width: 100%;
+}
             .form-control{
                 width:100%;
                 background-color:transparent;
@@ -62,6 +64,9 @@ margin-bottom: 2.5rem;
                 padding:.7143rem 1.4286rem;
                 border-radius: .5714rem;
                 margin-bottom:3rem;
+                @media(max-width:992px){
+                    width: 100%;
+                }
             }
 
             & textarea{
