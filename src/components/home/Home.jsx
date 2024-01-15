@@ -21,6 +21,13 @@ function Home() {
     window.scrollTo(0, 0);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
       <section id='home'>
@@ -36,7 +43,7 @@ function Home() {
                 </p>
                 <div className='btn_wrapper'>
                   {/* <Link className='btn' to="/about">Discover More</Link> */}
-                  <Link className='btn' to='/about'>
+                  <Link className='btn' to='/about' onClick={scrollToTop}>
                 Discover More
                   </Link>
                 </div>
@@ -70,7 +77,7 @@ function Home() {
                 <h4>Manufacturing</h4>
                 <p>Nurturing <span className='rice' >quality rice</span>, one grain at a time, at our <span className='rice' >advanced</span> rice mill manufacturing unit.</p>
                 <div className='btn_wrapperr'>
-                  <Link className='btnn' to="/manufacture">Read More</Link>
+                  <Link className='btnn' to="/manufacture" onClick={scrollToTop}>Read More</Link>
                 </div>
               </div>
               <div className='sub_banner_image2'>
@@ -78,7 +85,7 @@ function Home() {
                 <h4>Exporting</h4>
                 <p>Bringing the <span className='rice' >best</span> rice to your plate from our mill, no <span className='rice' >matter</span> where you are. From our Exportation Service</p>
                 <div className='btn_wrapperr'>
-                  <Link className='btnn' to="/export">Read More</Link>
+                  <Link className='btnn' to="/export" onClick={scrollToTop}>Read More</Link>
                 </div>
               </div>
             </div>
