@@ -1,5 +1,7 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import './Contact.css';
+
+import { submitForm, saveMessages, getElementVal } from '../../firebase';
 // import React, { useState } from 'react';
 // import {useState, handleSubmit } from 'react';
 // import ContactImage from '../../assets/contact/contact.jpg';
@@ -34,8 +36,40 @@ import './Contact.css';
 //       });
 //     };
 // }
+
+
+
+
 export default function Contact() {
+    useEffect(() => {
+    const handleSubmit = (e) => {
+        e.preventDefault(); // Call the submitForm function from firebase.js
+        // submitForm();
+
+      var name = getElementVal("name");
+      var phone = getElementVal("phone");
+      var emailid = getElementVal("emailid");
+      var msgContent = getElementVal("msgContent");
   
+      // Call the saveMessages function from firebase.js
+      saveMessages(name, phone, emailid, msgContent);
+  
+      // Reset the form
+      document.getElementById("contactForm").reset();
+
+    };
+    //   componentDidMount() {
+    //     document.getElementById("contactForm").addEventListener("submit", submitForm);
+    // }
+    
+        document.getElementById("contactForm").addEventListener("submit", handleSubmit);
+    
+        // Cleanup the event listener on component unmount
+        return () => {
+            document.getElementById("contactForm").removeEventListener("submit", handleSubmit);
+        };
+    }, []);
+
   return (
 
     <>
@@ -68,18 +102,18 @@ export default function Contact() {
                     </div>
                     <div className="contact_col">
                         <h2>Contact US</h2>
-                        <form>
+                        <form id='contactForm' >
                             <div className="input_wrapper">
-                                <input type="text" className="form-control" placeholder="Your Name..." autoComplete="off"/>
+                                <input type="text" id='name' className="form-control" placeholder="Your Name..." autoComplete="off"/>
                             </div>
                             <div className="input_wrapper">
-                                <input type="text" className="form-control" placeholder="Your Phone..." autoComplete="off"/>
+                                <input type="text" id='phone' className="form-control" placeholder="Your Phone..." autoComplete="off"/>
                             </div>
                             <div className="input_wrapper">
-                                <input type="email" className="form-control" placeholder="Your Email..." autoComplete="off"/>
+                                <input type="email" id='emailid' className="form-control" placeholder="Your Email..." autoComplete="off"/>
                             </div>
                             <div className="input_wrapper">
-                                <textarea placeholder="Write a Message..."></textarea>
+                                <textarea id='msgContent' placeholder="Write a Message..."></textarea>
                             </div>
                             <div className="btn_wrapper">
                                 <button type="submit" className="btn">
