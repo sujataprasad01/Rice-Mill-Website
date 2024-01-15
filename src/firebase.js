@@ -29,11 +29,11 @@ const firebaseConfig = {
 
   saveMessages(name, phone, emailid, msgContent);
 
-//   document.querySelector(".alert").style.display = "block";
+  document.querySelector(".alert").style.display = "block";
 
-//   setTimeout(() => {
-//     document.querySelector(".alert").style.display = "none";
-//   }, 3000);
+  setTimeout(() => {
+    document.querySelector(".alert").style.display = "none";
+  }, 3000);
 
 //   document.getElementById("contactForm").reset();
 }

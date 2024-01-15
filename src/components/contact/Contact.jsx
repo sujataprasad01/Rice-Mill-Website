@@ -54,6 +54,14 @@ export default function Contact() {
       // Call the saveMessages function from firebase.js
       saveMessages(name, phone, emailid, msgContent);
   
+  //   enable alert
+  document.querySelector(".alert").style.display = "block";
+
+  //   remove the alert
+  setTimeout(() => {
+    document.querySelector(".alert").style.display = "none";
+  }, 4000);
+
       // Reset the form
       document.getElementById("contactForm").reset();
 
@@ -103,6 +111,7 @@ export default function Contact() {
                     <div className="contact_col">
                         <h2>Contact US</h2>
                         <form id='contactForm' >
+                        <div class="alert">Your message sent</div>
                             <div className="input_wrapper">
                                 <input type="text" id='name' className="form-control" placeholder="Your Name..." autoComplete="off"/>
                             </div>

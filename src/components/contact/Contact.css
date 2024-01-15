@@ -34,6 +34,19 @@ margin-bottom: 2.5rem;
             @media (max-width:767px){ 
                 width:100%;
             }
+
+
+        }
+        .alert{
+            width: 100%;
+            background: rgb(180, 136, 50);
+            padding: 10px 20px;
+            margin-bottom: 7px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 900;
+            display: none;
         }
         .input_wrapper{
             width:100%;
