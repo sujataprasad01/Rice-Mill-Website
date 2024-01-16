@@ -86,7 +86,7 @@ margin-right: 30rem;
         color: black;
     }
     @media(max-width: 992px){
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         margin: 1rem;
         /* padding: 0; */
     }

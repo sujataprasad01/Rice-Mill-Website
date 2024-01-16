@@ -51,7 +51,7 @@ customers.</h3>
       </div>
     </div>
     <div className='container'>
-      <h6 className='credit'>Copyright © 2024 HARI OM RICE MILL - Powered by <pre> </pre><Link to="https://sujataprasad.netlify.app/" target="_blank">   SUJATA PRASAD</Link></h6>
+      <h6 className='credit'>Copyright © 2024 HARI OM RICE MILL - Developed by<pre> </pre><Link to="https://sujataprasad.netlify.app/" target="_blank">   SUJATA PRASAD</Link></h6>
     </div>
     </>
   )

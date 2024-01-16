@@ -95,14 +95,14 @@ flex-direction: column;
 /* justify-content: center; */
 /* align-items: center; */
 margin: 2rem;
-margin-top: 3rem;
+margin-top: 5rem;
 
 @media(max-width:992px){
     width: auto;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    margin: 0;
+    margin-top: 4rem;
     height: 50%;
     padding: 0;
 
@@ -188,19 +188,22 @@ border-radius:0 10%;
         padding-top: 5rem;
     }
 }
-}
+/* .container{
+
+} */
 .container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    backdrop-filter: blur(2px); 
-
+    backdrop-filter: blur(2px);
+    @media(max-width:1300px){
+        margin-top: 9rem;
+    } 
     @media(max-width:992px){
-        margin-top: 5rem;
+        margin-top: 4rem;
         display: flex;
     justify-content: space-around;
     }
-}
   
   .contact, .categories{
     width: 48%; /* Adjust the width as needed */
@@ -272,6 +275,9 @@ border-radius:0 10%;
      /* Full width on smaller screens */
     }
 }
+}
+
+    }
 }
 
 
