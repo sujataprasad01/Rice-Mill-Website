@@ -71,6 +71,7 @@ background-size: cover;
     flex-direction: column;
     margin-bottom: 10rem;
     margin-top: 0;
+
 }
     & h3{
         margin: 2rem;
@@ -81,10 +82,18 @@ background-size: cover;
     text-align: left;
 
         }
+        @media(max-width: 360px){
+            font-size: 1.7rem;
+        
+                }
     }
     & h4{
         text-align: justify;
         margin: 2rem;
+        @media(max-width: 360px){
+    font-size: 1.3rem;
+
+        }
     }
 }
 .col3{
@@ -101,8 +110,7 @@ margin-top: 5rem;
     width: auto;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    margin-top: 4rem;
+    margin-top: 8rem;
     height: 50%;
     padding: 0;
 
@@ -117,6 +125,7 @@ margin-top: 5rem;
         width: 53%;
         height: 100%;
 border-radius:0 10%;
+
 @media(max-width:992px){
     /* margin-top: 130%; */
     margin-top: 10%;

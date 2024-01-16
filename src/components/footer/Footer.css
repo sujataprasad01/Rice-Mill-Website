@@ -58,16 +58,21 @@ margin-right: 30rem;
 }
         & h3{
             margin-bottom: 15px;
+           
         }
         & h4{
             font-size: 20px;
             color:#e0dbdb;
             margin-bottom: 15px;
+            /* @media(max-width: 992px){
+                font-size: 1.3rem;
+            } */
         }
 
         & a{
             text-decoration: none;
             color: black;
+          
         }
         @media(max-width: 992px){
             flex-direction: column;
@@ -85,10 +90,16 @@ margin-right: 30rem;
         text-decoration: none;
         color: black;
     }
+  
+
     @media(max-width: 992px){
         font-size: 0.6rem;
         margin: 1rem;
         /* padding: 0; */
+    }
+    @media(max-width: 360px){
+        font-size: 0.5rem;
+    
     }
     /* word-spacing: 10px; */
 }
