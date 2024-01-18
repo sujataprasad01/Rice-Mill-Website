@@ -1,6 +1,6 @@
 import React , {useEffect, useState, useRef} from 'react';
 import './Contact.css';
-
+import { Link } from 'react-router-dom';
 import { submitForm, saveMessages, getElementVal } from '../../firebase';
 // import React, { useState } from 'react';
 // import {useState, handleSubmit } from 'react';
@@ -94,6 +94,13 @@ export default function Contact() {
     //     };
     // }, []);
 
+    const handleCopy = () => {
+        const phoneNumber = "+91 9145110493";
+        navigator.clipboard.writeText(phoneNumber);
+        // props.showAlert("Your text is copied to clipboard", "success")
+    
+    }
+
   return (
 
     <>
@@ -104,14 +111,14 @@ export default function Contact() {
                         <div className="contact_image" >
                             {/* <img src={ContactImage} alt="Contact"/> */}
                             <h2>Contact Info</h2>
-                            <div className='container'>
+                            <div className='containerr'>
                             <div className='cone'>
                             <h3><span className='ricee' >Call Us</span></h3>
-                            <h4> +91 9145110493 </h4>
+                            <h4><button onClick={handleCopy} title="Click to Copy">+91 9145110493</button></h4>
                             </div>
                             <div className='ctwo'>
                             <h3><span className='ricee' >Our Email</span></h3>
-                            <h4><a href='hariomricemill2007@gmail.com'>hariomricemill2007@gmail.com</a></h4>
+                            <h4><Link to='mailto:hariomricemill2007@gmail.com'>hariomricemill2007@gmail.com</Link></h4>
                             </div>
                             <div className='cthree'>
                             <h3><span className='ricee' >Working Hours</span></h3>
